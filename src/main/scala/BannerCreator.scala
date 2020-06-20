@@ -1,4 +1,15 @@
 object BannerCreator {
 
-  private val
+  private val decor = ".｡:･・.｡:*･★.｡:･・.｡:*･★.｡:･・.｡:*･★.｡:･・.｡:*･★.｡:･・.｡:*･★"
+
+  def create(message: String) = {
+    s"""${decor}
+       |${message}
+       |${decor}
+       |""".stripMargin
+  }
+}
+
+object MessageContainer {
+  var message = ""
 }
